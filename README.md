@@ -2,6 +2,9 @@
 
 A real-time cryptocurrency order book application built with Next.js, showcasing live market data from Kraken's WebSocket API. The application displays real-time order book updates, trade feeds, and market information for various cryptocurrency pairs.
 
+## Vercel Application
+https://dex-order-book.vercel.app/
+
 ## Features
 
 - Real-time order book updates via WebSocket connection
