@@ -1,6 +1,6 @@
 # Real-Time Crypto Order Book
 
-![Order Book Screenshot](./public/orderbook-screenshot.png)
+![Order Book Screenshot](./public/dex-order-book.png)
 
 A real-time cryptocurrency order book application built with Next.js, showcasing live market data from Kraken's WebSocket API. The application displays real-time order book updates, trade feeds, and market information for various cryptocurrency pairs.
 
