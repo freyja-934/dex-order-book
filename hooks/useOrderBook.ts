@@ -97,12 +97,14 @@ export function useOrderBook(
 
   useEffect(() => {
     const getInitialData = async () => {
-      const formattedSymbol = formatSymbol(symbol)
-      const initialData = await fetchInitialOrderBook(formattedSymbol)
-      if (initialData) setData(initialData)
+      if (!initialData) {
+        const formattedSymbol = formatSymbol(symbol)
+        const data = await fetchInitialOrderBook(formattedSymbol)
+        if (data) setData(data)
+      }
     }
     getInitialData()
-  }, [symbol])
+  }, [symbol, initialData])
 
   const createWebSocket = () => {
     if (typeof window === 'undefined' || isCleaningUpRef.current) return
